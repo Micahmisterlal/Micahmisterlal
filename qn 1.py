@@ -1,12 +1,8 @@
-score = int(input("enter the student's score(between 0 and 100):"))
-if 90 <= score <= 100:
-    grade = "A"
-elif 80<= score<= 89:
-    grade = "B"
-elif 70<= score<= 79:
-    grade = "C"
-elif 60<= score<= 69:
-    grade = "D"
-else:
-    grade = "F"
-    print(f"the student's grade is: {grade}")
+import math
+def calculate_N(x):
+    numerator = (x**4 - x**3 + x**2 - x) 
+    denominator = (x + 1)**2 
+    return numerator / denominator - math.sqrt(x)
+x = float(input("enter the vaule of x: "))
+N = calculate_N(x)
+print("the value of N IS:", N)

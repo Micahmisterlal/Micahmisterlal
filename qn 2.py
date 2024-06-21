@@ -1,5 +1,8 @@
-year = int(input("enter a year"))
-if (year %4 == 0 and year % 100 !=0) or year %400 ==0:
-    print("the year is a leap year")
-else:
-    print("the year is not a leap year")
+import math
+L = int(input('please enter L'  ))
+C = int(input('please enter C'  ))
+r = int(input('please enter r'  ))
+firstn = (1 / 2*math.pi) * (1 / L*C ) **1/2 
+secondn = (r **2/3) / 4*L**2 
+fres = firstn - secondn
+print(fres)
